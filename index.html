@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студия</title>
+    <!-- Дополнительные стили -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Основной файл стилей -->
+    <link rel="stylesheet" href="./css/reviews.css" />
+  </head>
+
+  <body>
+    <section class="gallery">
+      <!--скрыть заголовок-->
+      <h2 class="gallery__title">Our Gallery</h2>
+      <!-- <picture>
+        <source srcset="./images/gallery-mobile.png 1x" type="image/webp" />
+         </picture> 
+        
+        srcset="./images/gallery-tablet.png 1x"-->
+      <img
+        src="./images/gallery-desktop.png"
+        alt="Photo Gallery"
+        class="gallery__image"
+      />
+    </section>
+
+    <section class="reviews">
+      <!--скрыть заголовок-->
+      <h2 class="reviews__title">Customer Reviews</h2>
+
+      <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <img
+                class="reviews__photo"
+                alt="Happy client Emily"
+                src="./images/client-emily@1x.jpg"
+                srcset="./images/client-emily@2x.jpg 2x"
+              />
+              <div class="reviews__text--container">
+                <p class="reviews__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+              <h3 class="reviews__city">Emily, Los Angeles</h3>
+            </div>
+
+            <div class="slider__item">
+              <img
+                class="reviews__photo"
+                alt="Happy client Ann"
+                src="./images/client-ann@1x.jpg"
+                srcset="./images/client-ann@2x.jpg 2x"
+              />
+              <div class="reviews__text--container">
+                <p class="reviews__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+              <h3 class="reviews__city">Ann, Los Angeles</h3>
+            </div>
+            <div class="slider__item">
+              <img
+                class="reviews__photo"
+                alt="Happy client Sara"
+                src="./images/client-sara@1x.jpg"
+                srcset="./images/client-sara@2x.jpg 2x"
+              />
+              <div class="reviews__text--container">
+                <p class="reviews__text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor
+                  risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                  congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+              <h3 class="reviews__city">Sara, Los Angeles</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="slider__indicators"></ul>
+    </section>
+
+    <!-- Скрипты -->
+
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
