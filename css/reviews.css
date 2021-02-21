@@ -19,8 +19,19 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .gallery {
+  display: flex;
+  justify-content: center;
   margin-bottom: 80px;
+  background: linear-gradient(to bottom, #fff5f6 40%, #fff 40%);
 }
 
 @media screen and (min-width: 760px) {
@@ -35,11 +46,78 @@ body {
   }
 }
 
+.gallery__list {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 2px;
+}
+
+@media screen and (min-width: 760px) {
+  .gallery__item:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
 .gallery__image {
   margin: 0 auto;
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.thumb {
+  margin-bottom: 2px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+
+  overflow: hidden;
+}
+
+@media screen and (min-width: 760px) {
+  .thumb {
+    margin-bottom: 4px;
+    width: 85px;
+    height: 85px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb {
+    margin-bottom: 8px;
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+  }
+}
+
+.thumb--big {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (min-width: 760px) {
+  .thumb--big {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb--big {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
